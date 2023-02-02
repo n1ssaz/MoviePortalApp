@@ -1,1 +1,1 @@
-web: npm run dev
+web: node scripts/heroku-start.js
