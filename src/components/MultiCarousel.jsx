@@ -19,11 +19,13 @@ const responsive = {
     items: 1
   }
 };
-function MultiCareusel{(=>
-    <Carousel responsive={responsive}>
+function MultiCarousel(){
+  return(
+  <Carousel responsive= {responsive}>
   <div>Item 1</div>
   <div>Item 2</div>
   <div>Item 3</div>
   <div>Item 4</div>
-</Carousel>;
-    )}
+</Carousel>
+  )
+}
