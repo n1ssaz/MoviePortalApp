@@ -9,18 +9,18 @@ import database from "../../db.json"
 import { useParams } from 'react-router-dom'
 import GridItem from '../components/GridItem'
 
-function Movie(){
-const {movie}=useParams()
-  const currentMovie=database.movies.filter(item =>{
-    if(item.id == movie){
-        return(true)
+function Movie() {
+  const { movie } = useParams()
+  const currentMovie = database.movies.filter(item => {
+    if (item.id == movie) {
+      return (true)
     }
-    return(false)
+    return (false)
   })
 
   return (
-    <div style={{display:"flex",justifyContent:"flex-start",alignItems:"center",marginTop:100}}>
-<GridItem item={currentMovie[0]}></GridItem>
+    <div style={{ display: "flex", justifyContent: "flex-start", alignItems: "center", marginTop: 100 }}>
+      <GridItem item={currentMovie[0]}></GridItem>
     </div>
   )
 }

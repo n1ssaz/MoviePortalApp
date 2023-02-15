@@ -20,7 +20,7 @@ export default function MovieGrid(props) {
   return (
     <Box >
       <Grid sx={{marginTop:12, display: "flex",  justifyContent:'space-around' ,marginLeft:20,marginRight:20,}} container spacing={{ xs: 2, md: 5 }} columns={{ xs: 4, sm: 8, md: 20 }}>
-        {movies.slice(0,24).map((item =>{
+        {movies.map((item =>{
           return(<Grid xs={2} sm={4} md={4} key={item.id} >
             <GridItem item={item}/>
           </Grid>)

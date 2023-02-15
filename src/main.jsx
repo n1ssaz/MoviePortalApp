@@ -15,6 +15,9 @@ import WatchLater from './routes/WatchLater';
 import Genres from './routes/Genres';
 import { Outlet } from 'react-router-dom';
 import Movie from './routes/Movie';
+import Years from './routes/Years';
+import InfiniteScrollRoute from './routes/InfiniteScroll';
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -40,6 +43,15 @@ const router = createBrowserRouter([
         path: "Movie/:movie",
         element: <Movie></Movie>
       },
+      {
+      path: "Years/:year",
+      element: <Years></Years>
+    },
+
+    {
+      path: "InfiniteScroll/",
+      element: <InfiniteScrollRoute></InfiniteScrollRoute>
+    },
     ]
   },
 

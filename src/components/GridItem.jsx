@@ -52,11 +52,11 @@ export default function GridItem(props) {
       </CardContent>
       <CardActions disableSpacing>
         <IconButton onClick={()=>{dispatch(addFavourite(item.id))}} aria-label="add to favorites" >
-          <FavoriteIcon sx={{  color: favourites.includes(item.id)? 'red' :""}}/>
+          <FavoriteIcon sx={{  color: favourites?.includes(item.id)? 'red' :""}}/>
         
         </IconButton>
         <IconButton onClick={()=>{dispatch(toggleWatchLater(item.id))}} aria-label="WatchLater" >
-        <AccessTimeIcon sx={{  color: WatchLater.includes(item.id)? 'green' :""}}>
+        <AccessTimeIcon sx={{  color: WatchLater?.includes(item.id)? 'green' :""}}>
 
         </AccessTimeIcon>
       </IconButton>

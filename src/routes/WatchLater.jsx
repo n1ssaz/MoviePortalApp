@@ -12,12 +12,12 @@ function WatchLater() {
 
   const WatchLaterList = useSelector((state) => state.data.watchLater)
 
-  const movies=database.movies.filter(item =>{
+  const movies = database.movies.filter(item => {
     return WatchLaterList.includes(item.id)
   })
   return (
     <div>
-<MovieGrid movies={movies}></MovieGrid>
+      <MovieGrid movies={movies}></MovieGrid>
     </div>
   )
 }
